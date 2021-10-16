@@ -9,13 +9,13 @@
 </head>
 <body>
     <section>
-        <img src="/images/Clouds.png" id='stars' alt="">
-        <img src="/images/sun.png" id='moon' alt="">
-        <img src="/images/skyline.png" id='mountains_behind' alt="">
+        <img src="/images/Clouds.png" id='clouds' alt="">
+        <img src="/images/sun.png" id='sun' alt="">
+        <img src="/images/skyline.png" id='skyline' alt="">
         <h2 id="text">Welcome<span>JS</span></h2>
-        <a href="#" id="btn">Hello</a>
-        <a href="https://vivek8teen.netlify.app/" id="btn-1">Vivek</a>
-        <img src="/images/lake.png" id='mountains_front' alt="">
+        <a href="#" id="hello">Hello</a>
+        <a href="https://vivek8teen.netlify.app/" id="vivek">Vivek</a>
+        <img src="/images/lake.png" id='lake' alt="">
     </section>
     <script src="/anime.js"></script>
     <script>
@@ -25,32 +25,32 @@
         });
         animation
         .add({
-            targets:'#btn',
+            targets:'#hello',
             top:'1500px',
             duration:500,
             easing:	'easeInOutSine'
         })
 
         .add({
-            targets:"#mountains_front",
+            targets:"#lake",
             bottom:'0px',
             duration:1000,
             easing:	'easeInOutSine'
         })
         .add({
-            targets:"#stars",
+            targets:"#clouds",
             top:'0px',
             duration:1000,
             easing:	'easeInOutSine'
         })
         .add({
-            targets:"#mountains_behind",
+            targets:"#skyline",
             bottom:'0px',
             duration:1000,
             easing:	'easeInOutSine'
         })
         .add({
-            targets:"#moon",
+            targets:"#sun",
             top:'0px',
             duration:1000,
             easing:	'easeInOutBack'
@@ -62,14 +62,14 @@
             easing:	'easeInOutBack'
         })
         .add({
-            targets:'#btn-1',
+            targets:'#vivek',
             top:'50%',
             display:'block',
             duration:1000,
             easing:	'easeInOutBack'
         })
 
-        document.querySelector('#btn').onclick = animation.play;
+        document.querySelector('#hello').onclick = animation.play;
     </script>
 </body>
 </html>
