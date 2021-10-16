@@ -9,12 +9,13 @@
 </head>
 <body>
     <section>
-        <img src="/images/stars.png" id='stars' alt="">
-        <img src="/images/moon.png" id='moon' alt="">
-        <img src="/images/mountains_behind.png" id='mountains_behind' alt="">
-        <h2 id="text">Anime <span>JS</span></h2>
-        <a href="#" id="btn">play</a>
-        <img src="/images/mountains_front.png" id='mountains_front' alt="">
+        <img src="/images/Clouds.png" id='stars' alt="">
+        <img src="/images/sun.png" id='moon' alt="">
+        <img src="/images/skyline.png" id='mountains_behind' alt="">
+        <h2 id="text">Welcome<span>JS</span></h2>
+        <a href="#" id="btn">Hello</a>
+        <a href="https://vivek8teen.netlify.app/" id="btn-1">Vivek</a>
+        <img src="/images/lake.png" id='mountains_front' alt="">
     </section>
     <script src="/anime.js"></script>
     <script>
@@ -31,6 +32,12 @@
         })
 
         .add({
+            targets:"#mountains_front",
+            bottom:'0px',
+            duration:1000,
+            easing:	'easeInOutSine'
+        })
+        .add({
             targets:"#stars",
             top:'0px',
             duration:1000,
@@ -38,12 +45,6 @@
         })
         .add({
             targets:"#mountains_behind",
-            bottom:'0px',
-            duration:1000,
-            easing:	'easeInOutSine'
-        })
-        .add({
-            targets:"#mountains_front",
             bottom:'0px',
             duration:1000,
             easing:	'easeInOutSine'
@@ -61,8 +62,9 @@
             easing:	'easeInOutBack'
         })
         .add({
-            targets:'#btn',
+            targets:'#btn-1',
             top:'50%',
+            display:'block',
             duration:1000,
             easing:	'easeInOutBack'
         })
